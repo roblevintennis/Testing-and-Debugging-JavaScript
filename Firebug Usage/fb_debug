@@ -1,0 +1,845 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" dir="ltr"
+    class="html-ltr firefox">
+<head>
+    <title>Firebug :: Add-ons for Firefox</title>
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="/img/favicon.ico" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="MSSmartTagsPreventParsing" content="true"/>
+    <meta name="Copyright" content="(c) 2005-2009 Mozilla. All rights reserved."/>
+    <meta http-equiv="imagetoolbar" content="no"/>
+    <meta name="Rating" content="General"/>
+
+    <link rel="search" type="application/opensearchdescription+xml" title="Mozilla Add-ons"
+        href="/AMOSearch.xml" />
+
+    
+            <link rel="stylesheet" type="text/css" href="/css/amo2009/style.min.css?52492" media="all" />    
+    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="/css/amo2009/ie.css" media="screen,projection,tv" />    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="/css/amo2009/ie7.css" media="screen,projection,tv" />    <![endif]-->
+    <!--[if IE 6]>
+        <link rel="stylesheet" type="text/css" href="/css/amo2009/ie6.css" media="screen,projection,tv" />    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/css/jquery&#45;lightbox.css" />
+<link rel="stylesheet" type="text/css" href="/css/autocomplete.css" />
+
+    <script type="text/javascript" src="/js/__utm.js"></script><script type="text/javascript" src="/en-US/firefox/pages/js_constants.js"></script>
+<script type="text/javascript" src="/js/amo2009/amo2009.min.js?51751"></script>
+<script type="text/javascript" src="/js/jquery&#45;ui/ui.lightbox.js"></script>
+<script type="text/javascript" src="/js/jquery.autocomplete.pack.js"></script>
+<script type="text/javascript" src="/js/tags.js"></script>
+    <script type="text/javascript">// <![CDATA[
+    $(document).ready(function() {
+        $(".hidden").hide(); // hide anything that should be hidden
+
+        if (typeof __utmSetVar == 'function') {
+                            __utmSetVar("Loggedout");
+                    }
+    });
+    // ]]></script>
+
+        </head>
+
+<body id="mozilla-com" class="html-ltr firefox user-anon inverse">
+        <ul id="nav-access" role="navigation">
+        <li><a href="#content">Skip to main content</a></li>
+        <li><a href="#search-form">Skip to search form</a></li>
+        <li><a href="#categories">Skip to categories menu</a></li>
+        <li><a href="#other-apps">Skip to other applications menu</a></li>
+    </ul>
+        
+    <div class="section">
+        <div id="header" role="banner">
+        <p id="title"><a href="/en-US/firefox/" title="Return to the Firefox Add-ons homepage">Add-ons <em>for</em> <img alt="Firefox" src="/img/amo2009/app-icons/firefox.png" /> <strong>Firefox</strong></a></p>
+    <p id="brand"><a href="http://www.mozilla.com/en-US/" title="Mozilla" accesskey="1">Mozilla</a></p>
+
+    
+    <div id="aux-nav" role="navigation">
+        <ul id="other-apps" class="change" title="Find add-ons for other applications">
+            <li>
+                <a href="#" class="controller">Other Applications</a>
+                <ul>                            <li id="app-thunderbird" class="thunderbird">
+                                <a href="/en-US/thunderbird/">Thunderbird</a>
+                            </li>
+                                                    <li id="app-seamonkey" class="seamonkey">
+                                <a href="/en-US/seamonkey/">SeaMonkey</a>
+                            </li>
+                                                    <li id="app-sunbird" class="sunbird">
+                                <a href="/en-US/sunbird/">Sunbird</a>
+                            </li>
+                                                    <li id="app-mobile" class="mobile">
+                                <a href="/en-US/mobile/">Mobile</a>
+                            </li>
+                        </ul>
+            </li>
+        </ul>
+
+        
+    <p class="context">
+        <a href="/en-US/firefox/users/register">Register</a> or <a href="/en-US/firefox/users/login?to=en-US%2Ffirefox%2Faddon%2F1843">Log in</a>    </p>
+    </div>
+</div>
+    
+
+<div class="stand-alone-options">
+  <div id="categories" class="categories">
+    <h3 title="Choose a category">
+                    <a href="#categoriesdropdown" aria-haspopup="true">Categories</a>
+
+            </h3>
+    <ul id="categoriesdropdown">
+        <li>
+            <ul>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:72" >Alerts &amp; Updates</a>                                                    <span class="items">708</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:14" >Appearance</a>                                                    <span class="items">827</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:22" >Bookmarks</a>                                                    <span class="items">807</span>
+                                            </li>
+                                                                                                <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:5" >Download Management</a>                                                    <span class="items">426</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:1" >Feeds, News &amp; Blogging</a>                                                    <span class="items">792</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:37" >Language Support</a>                                                    <span class="items">394</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:38" >Photos, Music &amp; Videos</a>                                                    <span class="items">684</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:7" >Plugins</a>                                                    <span class="items">7</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:12" >Privacy &amp; Security</a>                                                    <span class="items">540</span>
+                                            </li>
+                                                                                                <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:71" >Social &amp; Communication</a>                                                    <span class="items">1030</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:93" >Tabs</a>                                                    <span class="items">333</span>
+                                            </li>
+                                                                                                <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:92" >Toolbars</a>                                                    <span class="items">927</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:4" >Web Development</a>                                                    <span class="items">933</span>
+                                            </li>
+                                                                            <li>
+                        <a href="/en-US/firefox/browse/type:1/cat:73" >Other</a>                                                    <span class="items">2014</span>
+                                            </li>
+                            </ul>
+        </li>
+        <li>
+            <ul>
+                <li>
+                    <a href="/en-US/firefox/collections/" >Collections</a>                </li>
+                                                                                                                                        <li>
+                        <a href="/en-US/firefox/browse/type:3" >Dictionaries &amp; Language Packs</a>                    </li>
+                                                                                                                                                                                                    <li>
+                        <a href="/en-US/firefox/browse/type:4" >Search Tools</a>                    </li>
+                                                                                                                    <li>
+                        <a href="/en-US/firefox/browse/type:2/cat:all?sort=popular" >Themes</a>                    </li>
+                                                                                        </ul>
+        </li>
+    </ul>
+</div>
+  
+<div class="search-form expanded-search-form">
+    <form method="get" action="/en-US/firefox/search" id="search-form">
+        <div class="basic" id="search-query">
+            <label for="query" class="query-label" title="Click to enter search terms">search for add-ons</label>
+            <input id="query" type="text" title="search" name="q" value="" />
+            <label for="cat">within</label>
+            <select name="cat" id="cat">
+                    <option class="cat-all" value="all" selected="selected">all add-ons</option>
+
+                                                                    <option value="1,72">Alerts &amp; Updates</option>
+                                                                    <option value="1,14">Appearance</option>
+                                                                    <option value="1,22">Bookmarks</option>
+                                                                    <option value="3,0">Dictionaries &amp; Language Packs</option>
+                                                                    <option value="1,5">Download Management</option>
+                                                                    <option value="1,1">Feeds, News &amp; Blogging</option>
+                                                                    <option value="1,37">Language Support</option>
+                                                                    <option value="1,38">Photos, Music &amp; Videos</option>
+                                                                                            <option value="1,12">Privacy &amp; Security</option>
+                                                                    <option value="4,0">Search Tools</option>
+                                                                    <option value="1,71">Social &amp; Communication</option>
+                                                                    <option value="1,93">Tabs</option>
+                                                                    <option value="2,0">Themes</option>
+                                                                    <option value="1,92">Toolbars</option>
+                                                                    <option value="1,4">Web Development</option>
+                                                                    <option value="1,73">Other</option>
+                    
+                    <option class="cat-all" value="collections">all collections</option>
+            </select>
+            <button type="submit"><img src="/img/amo2009/blank.gif" alt="Search for add-ons"/></button>
+        </div>
+
+        </form><form method="get" action="" id="hidden-form" class="asclosed">
+        <div class="advanced" id="advanced-search">
+            <fieldset class="important">
+                            <input type="hidden" name="as" value="1" />
+
+                <div class="container application">
+                    <label for="appid">Application</label>
+                    <select name="appid"  id="appid">
+<option value="1"  selected="selected">Firefox</option>
+<option value="18" >Thunderbird</option>
+<option value="59" >SeaMonkey</option>
+<option value="52" >Sunbird</option>
+<option value="60" >Mobile</option>
+</select>                </div>
+
+                <div class="container">
+                    <label for="lver">version</label>
+                    <span id="lver-td"><input name="lver" type="text" size="5" maxlength="10" value="" /></span>
+                </div>
+
+
+            </fieldset>
+
+            <fieldset class="subsidiary">
+                <div class="container">
+                    <label for="atype">Type</label>
+                    <select name="atype"  id="atype">
+<option value="0" >Any</option>
+<option value="1" >Extensions</option>
+<option value="2" >Themes</option>
+<option value="3" >Dictionaries</option>
+<option value="4" >Search Engines</option>
+<option value="5" >Language Packs (Application)</option>
+</select>                </div>
+                <div class="container">
+                    <label for="pp">Per Page</label>
+                    <select name="pp"  id="pp">
+<option value="5" >5</option>
+<option value="10" >10</option>
+<option value="20"  selected="selected">20</option>
+<option value="50" >50</option>
+<option value="100" >100</option>
+</select>                </div>
+                <div class="container">
+                    <label for="pid">Platform</label>
+                    <select name="pid"  id="pid">
+<option value="0" >Any</option>
+<option value="1" >BSD</option>
+<option value="2" >Linux</option>
+<option value="3" >MacOSX</option>
+<option value="4" >Solaris</option>
+<option value="5" >Windows</option>
+</select>                </div>
+                <div class="container">
+                    <label for="sort">Sort By</label>
+                    <select name="sort"  id="sort">
+<option value="" >Keyword Match</option>
+<option value="newest" >Newest</option>
+<option value="name" >Name</option>
+<option value="averagerating" >Rating</option>
+<option value="weeklydownloads" >Popularity</option>
+</select>                </div>
+                <div class="container">
+                    <label for="lup">Last Updated</label>
+                    <select name="lup"  id="lup">
+<option value="" >Any time</option>
+<option value="1 day ago" >Past Day</option>
+<option value="1 week ago" >Past week</option>
+<option value="1 month ago" >Past month</option>
+<option value="3 months ago" >Past 3 months</option>
+<option value="6 months ago" >Past 6 months</option>
+<option value="1 year ago" >Past year</option>
+</select>                </div>
+            </fieldset>
+        </div>
+
+        <div id="advanced-link" title="Toggle advanced search mode"><a href="/en-US/firefox/addon/1843?advancedsearch=1">Advanced</a></div>
+    </form>
+    <div id="search-bubble-inner"></div>
+
+</div>
+
+<script type="text/javascript">
+// <![CDATA[
+
+versions = new Array();
+versions[1] = {"1.0": "1.0", "1.5": "1.5", "2.0": "2.0", "3.0": "3.0", "3.5": "3.5", "3.6": "3.6", "3.7": "3.7", 'Any' : 'any' };
+versions[18] = {"1.0": "1.0", "1.1": "1.1", "1.5": "1.5", "2.0": "2.0", "3.0": "3.0", "3.1": "3.1", 'Any' : 'any' };
+versions[59] = {"1.0": "1.0", "1.1": "1.1", "1.5": "1.5", "2.0": "2.0", "2.1": "2.1", 'Any' : 'any' };
+versions[52] = {"0.2": "0.2", "0.3": "0.3", "0.4": "0.4", "0.5": "0.5", "0.6": "0.6", "0.7": "0.7", "0.8": "0.8", "0.9": "0.9", "1.0": "1.0", 'Any' : 'any' };
+versions[60] = {"0.1": "0.1", "0.7": "0.7", "1.0": "1.0", 'Any' : 'any' };
+
+    var current_app_id = 0;
+    if (gIsFirefox || gIsSeaMonkey) {
+        version = gBrowserVersion.split(".");
+        low_appversion = version[0]+"."+parseInt(version[1]);
+    }
+
+    if (gIsFirefox) {
+        current_app_id = APP_FIREFOX;
+        if (gIsMobile && (1 == APP_MOBILE)) {
+            current_app_id = APP_MOBILE;
+        }
+    } else if (gIsSeaMonkey) {
+        current_app_id = APP_SEAMONKEY;
+    }
+
+    default_low = ( ('' == '-1' || '' == '')  && current_app_id == 1) ? low_appversion : 'any';
+
+    
+    $("#lver-td input").remove();
+
+    var verArr =  versions[1];
+
+    var lverSel = document.createElement("select");
+    lverSel.id = "lver";
+    lverSel.name = "lver";
+    $("#lver-td").append(lverSel);
+    replaceOptions("#lver", verArr, default_low);
+
+
+    $("#appid").change(function () {
+            selected_app_id = $("#appid option:selected").attr("value");
+            default_low = (selected_app_id == current_app_id) ? low_appversion : 'any';
+            verArr =  versions[selected_app_id];
+            replaceOptions("#lver", verArr, default_low);
+        });
+
+        var adv = $('#advanced-search');
+    var advLink = $('#advanced-link a');
+    advLink.isHidden = true;
+    advLink.attr('href', '#'); // for ie6-7
+    advLink.click(function(e) {
+        if (advLink.isHidden) {
+            adv.appendTo("#search-form");
+            advLink.addClass("asopen");
+            advLink.removeClass("asclosed");
+            advLink.isHidden = false;
+        } else {
+            adv.appendTo("#hidden-form");
+            advLink.addClass("asclosed");
+            advLink.removeClass("asopen");
+            advLink.isHidden = true;
+        }
+        e.preventDefault();
+        return true;
+    });
+
+    
+    $(document).ready(function() {
+        var q = $("#query");
+        var l = $("#search-query label[for=query]");
+        var c = $("#cat");
+        l.show();
+        if ( q.val() == "search for add-ons"){ //initially q is set to search add-ons text for javascriptless browsing
+		  q.val('');
+		}
+        if ( q.val() != "") { // if field has any value...
+            l.hide(); // hide the label
+        };
+        l.click(function() { // for browsers with unclickable labels
+            q.focus();
+        });
+        q.focus(function() { // when field gains focus...
+            l.hide(); // hide the label
+        });
+        q.blur(function() { // when field loses focus...
+            if ( q.val() == "" ) { // if field is empty...
+                l.show(); // show the label again, else do nothing (label remains hidden)
+            };
+        });
+        c.change(function() {
+            if (c.val() == "collections") {
+                l.text("search for collections");
+                // most advanced fields do not apply to collection search
+                $('select:not(#appid,#pp),input', $('#advanced-search')).attr('disabled', 'disabled');
+            } else {
+                if (gIsMobile && (current_app_id == APP_MOBILE)) {
+                    l.text("search for mobile add-ons");
+                } else {
+                    l.text("search for add-ons");
+                }
+                $('select,input', $('#advanced-search')).attr('disabled', '');
+            }
+        });
+        c.change();
+    });
+  // ]]>
+</script>
+</div>
+
+<ol class="breadcrumbs">
+        <li><a href="/en-US/firefox/" >Add-ons for Firefox</a></li>
+    </ol>
+<h2  class="addon">
+  <img src="/en-US/firefox/images/addon_icon/1843/1254249333" class="icon" alt="" />
+  <span>
+    Firebug    1.4.3  </span>
+</h2>
+<h4 class="author">by <a href="/en-US/firefox/user/9265"  class="profileLink">Joe Hewitt</a>, <a href="/en-US/firefox/user/95117"  class="profileLink">Rob Campbell</a></h4>
+
+
+<div id="addon" class="primary" role="main">
+  <div class="featured">
+    <div class="featured-inner object-lead inverse">
+
+    <div id="addon-summary-wrapper">
+        <div id="addon-summary" class="primary rec">
+            <p >
+              Firebug integrates with Firefox to put a wealth of development tools at your fingertips while you browse. You can edit, debug, and monitor CSS, HTML, and JavaScript live in any web page...<br />
+<br />
+Firebug 1.4 requires Firefox 3.0 or higher.            </p>
+
+                        <div id="addon-install">
+                <div id="install-79554-79ab13a7" class="install install-container">
+                    <p class="install-button platform-ALL">
+                <a href="/en-US/firefox/downloads/latest/1843/addon-1843-latest.xpi?src=addondetail"  id="installTrigger65631-79ab13a7" title="Add Firebug to Firefox" addonName="Firebug" addonIcon="/en-US/firefox/images/addon_icon/1843/1254249333" addonHash="sha256:46088a92870affc53759bcf5cb4af34e708092cae7a74cafe73eb6adb37a4901" jsInstallMethod="browser_app_addon_install" class="button positive significant"><img src="/img/amo2009/icons/buttons/plus-green-16x16.gif" alt="" /><span class="install-button-text">Download Now </span></a>            </p>
+        	<script type="text/javascript">
+        installVersusDownloadCheck("installTrigger65631-79ab13a7", "Add to Firefox ", "Download Now ");
+	</script>
+    
+            <strong>recommended</strong>
+        </div>
+
+    <script type="text/javascript">setTimeout(function() {initExpConfirm('79554-79ab13a7');fixPlatformLinks('79554-79ab13a7', 'Firebug');addCompatibilityHints('1843', '79554-79ab13a7', '3.0', '3.5.*', '');},0);</script>
+
+            </div>
+                
+            
+            <table summary="Add-on Information">
+              <tbody>
+                                    <tr>
+                      <th>Version</th>
+                      <td>1.4.3</td>
+                    </tr>
+                    <tr>
+                      <th>Works with</th>
+                      <td>
+                        Firefox: 3.0 &ndash; 3.5.*                      </td>
+                    </tr>
+                    <tr>
+                      <th>Updated</th>
+                                            <td>
+                        <span title="September 29, 2009, 11:35 AM">
+                          September 29, 2009                        </span>
+                      </td>
+                    </tr>
+                                <tr>
+                  <th>
+                    Developers                  </th>
+                  <td><a href="/en-US/firefox/user/9265"  class="profileLink">Joe Hewitt</a>, <a href="/en-US/firefox/user/95117"  class="profileLink">Rob Campbell</a></td>
+                </tr>
+                                  <tr>
+                    <th>Homepage</th>
+                    <td><strong>
+                      <a href="http://getfirebug.com/" >http://getfirebug.com/</a>                    </strong></td>
+                  </tr>
+                                <tr>
+                  <th>Rating</th>
+                  <td>
+    <span class="stars stars-5" title="Rated 5 out of 5 stars">
+        Rated 5 out of 5 stars    </span>
+      <a href="/en-US/firefox/addon/1843#reviews">
+    <strong>681</strong> reviews  </a>
+</td>
+                </tr>
+                <tr>
+                  <th>Downloads</th>
+                  <td>
+                    <strong class="downloads">
+                      18,920,272                    </strong>
+                                          <a href="/en-US/statistics/addon/1843" >Statistics</a>                                      </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- addon-summary -->
+    </div> <!-- addon-summary-wrapper -->
+
+
+      <div class="secondary">
+                                  <a class="screenshot thumbnail" rel="lightbox" href="/en-US/firefox/images/p/9486/" title="">
+              <img alt="" src="/en-US/firefox/images/t/9486/" />
+            </a>
+          
+          <div class="share-this">
+            <a class="share" href="#">Share this Add-on</a>
+            <div class="share-networks">
+              <ul>
+                                  <li class="digg">
+                                        <a class="uniquify" target="_blank" href="/en-US/firefox/addon/share/1843?service=digg">
+                                            Digg this!                    </a>
+                  </li>
+                                  <li class="facebook">
+                                        <a class="uniquify" target="_blank" href="/en-US/firefox/addon/share/1843?service=facebook">
+                                            Post to Facebook                    </a>
+                  </li>
+                                  <li class="delicious">
+                                        <a class="uniquify" target="_blank" href="/en-US/firefox/addon/share/1843?service=delicious">
+                                            Add to Delicious                    </a>
+                  </li>
+                                  <li class="myspace">
+                                        <a class="uniquify" target="_blank" href="/en-US/firefox/addon/share/1843?service=myspace">
+                                            Post to MySpace                    </a>
+                  </li>
+                                  <li class="friendfeed">
+                                        <a class="uniquify" target="_blank" href="/en-US/firefox/addon/share/1843?service=friendfeed">
+                                            Share on FriendFeed                    </a>
+                  </li>
+                                  <li class="twitter">
+                                        <a class="uniquify" target="_blank" href="/en-US/firefox/addon/share/1843?service=twitter">
+                                            Post to Twitter                    </a>
+                  </li>
+                              </ul>
+            </div>
+          </div> <!-- share-this -->
+        </div> <!-- secondary -->
+    </div> <!-- featured-inner -->
+  </div> <!-- featured -->
+
+  <h3>More about this add-on</h3>
+  <div class="article">
+    <p >
+      Firebug integrates with Firefox to put a wealth of development tools at your fingertips while you browse. You can edit, debug, and monitor CSS, HTML, and JavaScript live in any web page.<br />
+<br />
+Visit the Firebug website for documentation, screen shots, and discussion forums: http://getfirebug.com<br />
+    </p>
+          <h4>Image Gallery</h4>
+              <a class="screenshot thumbnail" rel="jquery-lightbox"
+           href="/en-US/firefox/images/p/11826/" title="HTML and CSS">
+          <img src="/en-US/firefox/images/t/11826/" alt="" />
+        </a>
+              <a class="screenshot thumbnail" rel="jquery-lightbox"
+           href="/en-US/firefox/images/p/11827/" title="JavaScript">
+          <img src="/en-US/firefox/images/t/11827/" alt="" />
+        </a>
+              <a class="screenshot thumbnail" rel="jquery-lightbox"
+           href="/en-US/firefox/images/p/11828/" title="Network">
+          <img src="/en-US/firefox/images/t/11828/" alt="" />
+        </a>
+          
+          <h4>Support</h4>
+      <p>
+                  Support for this add-on is provided by the developer at <a href="http://groups.google.com/group/firebug/topics" >http://groups.google.com/group/firebug/topics</a>              </p>
+    
+              <h4>Developer Comments</h4>
+      <p >
+        If you have any problems, please read the FireBug FAQ.<br />
+<br />
+http://getfirebug.com/faq.html<br />
+      </p>
+      </div> <!-- article -->
+
+      <h3 id="reviews">Reviews</h3>
+    <div class="article">
+              <div class="hreview">
+                      <h5> </h5>
+                    <p class="description">Firebug mysteriously dissapeared from my extensions. I&#039;ve uninstalled and reinstalled Firefox &#45; I&#039;ve installed old versions of Firefox... anything to get it back. But it won&#039;t reinstall. It installs, tells me to restart Firefox, and then it&#039;s not there when FF comes back. My life is miserable without Firebug. On Vista. </p>
+          <p>
+                <span class="stars stars-5" title="Rated 5 out of 5 stars">
+        Rated 5 out of 5 stars    </span>
+                by <a href="/en-US/firefox/user/83316"  class="profileLink"> brig</a> on October 16, 2009          </p>
+        </div>
+              <div class="hreview">
+                      <h5> Firebug don&#039;t close properly</h5>
+                    <p class="description">Sometimes Firebug don&#039;t close properly when you click button &quot;Off&quot;, just remain a blank screen with nothing plus the button itself to turn it on. I&#039;ve noticed this when FF stays active for some time running &#40;maybe some hours&#41;. It&#039;s very annoying, leave me everytime to kill FF session.<br />
+<br />
+I&#039;m running Kubuntu Linux 9.10, FF 3.5.3</p>
+          <p>
+                <span class="stars stars-2" title="Rated 2 out of 5 stars">
+        Rated 2 out of 5 stars    </span>
+                by <a href="/en-US/firefox/user/1451124"  class="profileLink">dsemblano</a> on October 14, 2009          </p>
+        </div>
+              <div class="hreview">
+                      <h5> </h5>
+                    <p class="description">This is so awesome!<br />
+I can&#039;t even think of working without this !</p>
+          <p>
+                <span class="stars stars-5" title="Rated 5 out of 5 stars">
+        Rated 5 out of 5 stars    </span>
+                by <a href="/en-US/firefox/user/1501797"  class="profileLink">Kai Spriestersbach</a> on October 14, 2009          </p>
+        </div>
+            <p>
+        <a class="more-info" href="/en-US/firefox/reviews/display/1843">
+          See all 681 reviews of this add-on        </a>
+      </p>
+    </div>
+  
+
+      <h3>What do you think?</h3>
+    <div id="review-box" class="highlight">
+              <p>Please <a href="/en-US/firefox/users/login?to=en-US%2Ffirefox%2Faddon%2F1843">log in</a> to submit a review</p>
+      
+      <form class="addon-feedback" method="post"
+            action="/en-US/firefox/reviews/add/1843">
+        
+                <div class="container">
+          <label for="review">Review</label>
+          <textarea name="data[Review][body]" id="review" disabled="disabled"                    cols="30" rows="6"></textarea>
+        </div>
+        <div class="container">
+          <label for="review-rating">Rating</label>
+          <select id="review-rating" name="data[Review][rating]">
+            <option></option>
+            <option value="1" class="worst">*</option>
+            <option value="2" class="bad">**</option>
+            <option value="3" class="fair">***</option>
+            <option value="4" class="good">****</option>
+            <option value="5" class="best">*****</option>
+          </select>
+          <input type="hidden" name="data[Review][id]"  value="" id="ReviewId"/>
+          <input type="hidden" name="data[Review][title]"  value=" " id="ReviewTitle"/>
+          <button disabled="disabled">Post Review</button>
+        </div>
+      </form>
+
+      <p>Please do not post bug reports in reviews. We do not make your email address available to add-on developers and they may need to contact you to help resolve your issue.</p>
+              <p>See the <a href="#support">support section</a> to find out where to get assistance for this add-on.</p>
+            <p>
+        <a href="/en-US/firefox/pages/review_guide">Review Guidelines</a>      </p>
+      <p>
+        <a href="/en-US/firefox/reviews/add/1843">
+          Detailed Review        </a>
+      </p>
+    </div> <!-- highlight -->
+  
+        <h3>Release Notes</h3>
+      <div class="article">
+        <a href="/en-US/firefox/addons/versions/1843#version-1.4.3"  title="Permanent link to this version">Version 1.4.3</a>    <span title="September 29, 2009, 11:35 AM">&mdash;
+    September 29, 2009</span> &mdash; 675 KB        <p id="release-notes" >
+          Fixes a problem where Firebug could lose activation state for URLs if browser history was removed.<br />
+<br />
+Replaced &quot;Off for All Web Pages&quot; with &quot;Clear Activation List&quot;.        </p>
+
+        
+        <ul class="further-navigation">
+                    <li>
+            <a href="/en-US/firefox/addons/versions/1843">
+              View Older Versions            </a>
+          </li>
+        </ul>
+      </div> <!-- Release Notes -->
+  
+</div> <!-- primary -->
+
+<div class="secondary" role="secondary">
+
+
+    <div class="highlight">
+
+      <ul><li><a href="/en-US/firefox/browse/type:1/cat:4"  class="more-info">See All Web Development Add-ons</a></li>
+</ul>
+                <div class="other-author-addons">
+              <h4>Other add-ons by these authors              </h4>
+          <ul class="addon-otheraddons"><li><a href='/en-US/firefox/addon/5165' title='Joe Hewitt' class='addonitem'>Firebug Japanese</a></li></ul>          </div>
+          </div>
+
+<div class="clearboth">
+<h3 class="compact-bottom">Tags</h3>
+
+    <script type="text/javascript">
+        	var add_ajax_url = "/en-US/firefox/tags/add";
+	var remove_ajax_url = "/en-US/firefox/tags/remove";
+    </script>
+
+    <div id='tags'>
+        <form id='tags' class="remove-tags" method="post" action="/en-US/firefox/tags/remove/">
+    <input type="hidden" name="addonid" value="1843" />
+  <input type="hidden" name="ajax" value="0" />
+  <ul class="addon-tags nojs" id="addonid-1843">
+                        <li id="taglink-1243" class="developertag">
+                    <a href="/en-US/firefox/tag/console" class="tagitem">console</a>
+                                    </li>
+                        <li id="taglink-1238" class="developertag">
+                    <a href="/en-US/firefox/tag/debugging" class="tagitem">debugging</a>
+                                    </li>
+                        <li id="taglink-1241" class="developertag">
+                    <a href="/en-US/firefox/tag/development" class="tagitem">development</a>
+                                    </li>
+                        <li id="taglink-1239" class="developertag">
+                    <a href="/en-US/firefox/tag/DOM" class="tagitem">DOM</a>
+                                    </li>
+                        <li id="taglink-565" class="developertag">
+                    <a href="/en-US/firefox/tag/html" class="tagitem">html</a>
+                                    </li>
+                        <li id="taglink-638" class="developertag">
+                    <a href="/en-US/firefox/tag/javascript" class="tagitem">javascript</a>
+                                    </li>
+                        <li id="taglink-1242" class="developertag">
+                    <a href="/en-US/firefox/tag/logging" class="tagitem">logging</a>
+                                    </li>
+                        <li id="taglink-1240" class="developertag">
+                    <a href="/en-US/firefox/tag/network" class="tagitem">network</a>
+                                    </li>
+                        <li id="taglink-36" class="developertag">
+                    <a href="/en-US/firefox/tag/performance" class="tagitem">performance</a>
+                                    </li>
+                        <li id="taglink-650" class="developertag">
+                    <a href="/en-US/firefox/tag/web" class="tagitem">web</a>
+                                    </li>
+                        <li id="taglink-171" class="usertag">
+                    <a href="/en-US/firefox/tag/CSS" class="tagitem">CSS</a>
+                                    </li>
+                        <li id="taglink-39" class="usertag">
+                    <a href="/en-US/firefox/tag/developer" class="tagitem">developer</a>
+                                    </li>
+                        <li id="taglink-37" class="usertag">
+                    <a href="/en-US/firefox/tag/firebug" class="tagitem">firebug</a>
+                                    </li>
+                        <li id="taglink-236" class="usertag">
+                    <a href="/en-US/firefox/tag/js" class="tagitem">js</a>
+                                    </li>
+          </ul>
+</form>
+    </div>
+
+            <a href="/en-US/firefox/users/register">Register</a> or <a href="/en-US/firefox/users/login?to=en-US%2Ffirefox%2Faddon%2F1843">Log in</a> to add tags    
+</div>
+<!-- /.highlight-->
+
+          <div>
+        <h3 class="compact-bottom">Often used with&hellip;</h3>
+        <ul class="addon-otheraddons">
+                      <li>
+              <a href="/en-US/firefox/addon/60?src=reco" class="addonitem">
+                Web Developer              </a>
+            </li>
+                      <li>
+              <a href="/en-US/firefox/addon/271?src=reco" class="addonitem">
+                ColorZilla              </a>
+            </li>
+                      <li>
+              <a href="/en-US/firefox/addon/5369?src=reco" class="addonitem">
+                YSlow              </a>
+            </li>
+                      <li>
+              <a href="/en-US/firefox/addon/748?src=reco" class="addonitem">
+                Greasemonkey              </a>
+            </li>
+                      <li>
+              <a href="/en-US/firefox/addon/539?src=reco" class="addonitem">
+                MeasureIt              </a>
+            </li>
+                  </ul>
+      </div>
+    
+    <div class="collections-add">
+        <h3 class="compact-bottom">Related Collections</h3>
+
+                    <ul class="addon-collections">
+                                    <li><a href="/en-US/firefox/collection/webdeveloper"  class="collectionitem">Web Developer&#039;s Toolbox</a></li>
+                                    <li><a href="/en-US/firefox/collection/firebug_addons"  class="collectionitem">Firebug Add&#45;ons</a></li>
+                                    <li><a href="/en-US/firefox/collection/power"  class="collectionitem">Power User Pack</a></li>
+                                            <li>
+                    <a href="/en-US/firefox/collections/addon/1843">
+                        and 5423 more collections                    </a>
+                </li>
+
+                </ul>
+                    </div>
+
+</div>
+<script type="text/javascript" charset="utf-8">
+    // <![CDATA[
+    $(function(){
+        addons_display.init({
+            jsonURL: '/en-US/firefox/collections/json',
+            collViewURL: '/en-US/firefox/collection/',
+            loggedIn: 0            });
+        $("a[rel=jquery-lightbox]").lightBox({
+            overlayOpacity: 0.6,
+            imageBlank: "/img/jquery-lightbox/lightbox-blank.gif",
+            imageLoading: "/img/jquery-lightbox/lightbox-ico-loading.gif",
+            imageBtnClose: "/img/jquery-lightbox/close.png",
+            imageBtnPrev: "/img/jquery-lightbox/goleft.png",
+            imageBtnNext: "/img/jquery-lightbox/goright.png",
+            containerResizeSpeed: 350
+        });
+
+        $(document).ready(function() {
+            var etiquette_box = $("#addons-display-review-etiquette").hide();
+            $("#short-review").focus(function() { etiquette_box.show("fast"); } );
+        });
+
+        // This function toggles an element's text between two values
+        jQuery.fn.textToggle = function(text1, text2) {
+            jQuery(this).text( ( jQuery(this).text() == text1 ? text2 : text1 ) );
+        };
+    });
+    // ]]>
+</script>
+<!-- /#content -->
+
+</div> <!-- /.container -->
+<div id="footer" role="contentinfo">
+    <div class="section">
+        <div class="primary">
+
+                    <form class="languages go" method="get" action="">
+              <div>
+                <label for="language">Other languages:</label>
+                <select id="language" name="lang" dir="ltr">
+                <option value="ar" >عربي</option>
+<option value="ca" >català</option>
+<option value="cs" >Čeština</option>
+<option value="da" >Dansk</option>
+<option value="de" >Deutsch</option>
+<option value="en-US" selected="selected">English (US)</option>
+<option value="el" >Ελληνικά</option>
+<option value="es-ES" >Español (de España)</option>
+<option value="eu" >Euskara</option>
+<option value="fa" >فارسی</option>
+<option value="fi" >suomi</option>
+<option value="fr" >Français</option>
+<option value="ga-IE" >Gaeilge</option>
+<option value="he" >עברית</option>
+<option value="hu" >Magyar</option>
+<option value="id" >Bahasa Indonesia</option>
+<option value="it" >Italiano</option>
+<option value="ja" >日本語</option>
+<option value="ko" >한국어</option>
+<option value="mn" >Монгол</option>
+<option value="nl" >Nederlands</option>
+<option value="pl" >Polski</option>
+<option value="pt-BR" >Português (do Brasil)</option>
+<option value="pt-PT" >Português (Europeu)</option>
+<option value="ro" >română</option>
+<option value="ru" >Русский</option>
+<option value="sk" >slovenčina</option>
+<option value="sq" >Shqip</option>
+<option value="sv-SE" >Svenska</option>
+<option value="uk" >Українська</option>
+<option value="vi" >Tiếng Việt</option>
+<option value="zh-CN" >中文 (简体)</option>
+<option value="zh-TW" >正體中文 (繁體)</option>
+                </select>
+                <button type="submit">Go</button>
+              </div>
+            </form>
+        
+        <p><strong>Copyright <span title="pm-app-amo15.mozilla.org">&#169;</span> 2005&#8211;2009 Mozilla.</strong> All rights reserved.</p>
+        <ul>
+            <li><a href="/en-US/firefox/pages/privacy" >Privacy Policy</a></li>
+            <li><a href="http://www.mozilla.com/en-US/about/legal.html">Legal Notices</a></li>
+            <li><a href="/en-US/firefox/pages/credits" >Credits</a></li>            <li><a href="/en-US/firefox/pages/about" >About</a></li>
+            <li><a href="/en-US/firefox/pages/faq" ><abbr title="Frequently Asked Questions">FAQ</abbr></a></li>
+            <li><a href="http://blog.mozilla.com/addons">Blog</a></li>
+        </ul>
+
+        <p class="disclaimer">Mozilla is providing links to these applications as a courtesy, and makes no representations regarding the applications or any information related there to. Any questions, complaints or claims regarding the applications must be directed to the appropriate software vendor.</p>
+        </div>
+        <div class="secondary">
+            <img src="/img/amo2009/illustrations/logo-add-ons-half.png" alt="" />        </div>
+    </div> <!-- /.section -->
+</div> <!-- /#footer -->
+<!-- r52578 -->
+    </body>
+</html>
