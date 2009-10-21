@@ -1,0 +1,19 @@
+==============================================
+Testing & Debugging JavaScript Book Contents
+==============================================
+ 
+This is the source code and actual book, Testing and Debugging JavaScript (aka TDD JavaScript). It is licensed under the
+Creative Commons Attribution-Non Commercial-Share Alike 3.0 license. http://creativecommons.org/licenses/by-sa/3.0/us/ 
+ 
+Contributors
+=====================
+I am interested in contributors that may have relevant experience, information, that I am not supplying yet. For example, here are some possible topics/chapters that would probably improve the book:
+- IE specific debugging via the IE8 JavaScript debugger would be a great addition.
+- Integration with a continuous integration system.
+Note that the goal of the book is to be short and sweet so contributions will need to be to the point.
+
+Errata
+=====================
+If you find any technical mistakes and/or parts of the book that are in need of correction,
+please email me at roblevintennis at gmail dot com to inform me. 
+
