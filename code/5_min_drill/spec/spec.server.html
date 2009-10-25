@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script src="/jspec/jspec.js"></script>
+		<script src="/lib/test_js_itself.js"></script>
+		<script>
+			function runSuites() {
+				JSpec
+				.exec('spec.test_js_itself.js')
+				.run({ formatter: JSpec.formatters.Server, verbose: true, failuresOnly: true })
+				.report()
+			}
+		</script>
+	</head>
+	<body class="jspec" onLoad="runSuites();">
+	</body>
+</html>
