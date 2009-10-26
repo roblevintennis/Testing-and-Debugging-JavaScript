@@ -3,10 +3,12 @@
 		<link type="text/css" rel="stylesheet" href="/Library/Ruby/Gems/1.8/gems/visionmedia-jspec-2.11.2/lib/jspec.css" />
 		<script src="/Library/Ruby/Gems/1.8/gems/visionmedia-jspec-2.11.2/lib/jspec.js"></script>
 		<script src="../lib/js_objects.js"></script>
+		<script src="../lib/js_obj_creation.js"></script>
 		<script>
 			function runSuites() {
 				JSpec
 				.exec('spec.js_objects.js')
+				.exec('spec.js_obj_creation.js')
 				.run()
 				.report()
 			}

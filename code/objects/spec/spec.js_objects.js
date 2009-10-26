@@ -23,4 +23,5 @@ describe 'JSObjects'
 	    copy.name.should.eql 'Charlie' 
 	end
     end
+
 end
