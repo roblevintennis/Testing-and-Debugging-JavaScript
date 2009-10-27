@@ -18,5 +18,5 @@ function Issues(){}
 Issues.prototype = {
   x : 1,
   arr : ['uno','dos','tres'],
-  hsh : {phone : 'iPhone', plan : 'ATT' }
+  hsh : {phone : 'iPhone', carrier : 'ATT' }
 }
