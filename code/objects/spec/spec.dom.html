@@ -4,11 +4,13 @@
 		<script src="/Library/Ruby/Gems/1.8/gems/visionmedia-jspec-2.11.2/lib/jspec.js"></script>
 		<script src="../lib/js_objects.js"></script>
 		<script src="../lib/js_obj_creation.js"></script>
+		<script src="../lib/js_inheritance.js"></script>
 		<script>
 			function runSuites() {
 				JSpec
 				.exec('spec.js_objects.js')
 				.exec('spec.js_obj_creation.js')
+				.exec('spec.js_inheritance.js')
 				.run()
 				.report()
 			}
