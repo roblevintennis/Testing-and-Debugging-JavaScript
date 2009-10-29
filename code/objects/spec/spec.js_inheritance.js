@@ -63,7 +63,8 @@ describe 'JavaScript Inheritance Tests'
 	it 'should inherit properties from parent'
 	    person.toString().should.match /Original toString.*/i
 	    person.password.should.eql 'secret'
-	    joe = Object.inherit(person)
+	    //joe = Object.inherit(person)
+	    joe = helper.inherit(person)
 	    joe.password.should.eql 'secret'
 	    joe.password = 'letmein'
 	    joe.password.should.eql 'letmein'

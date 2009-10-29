@@ -41,24 +41,25 @@ Child.prototype.getAge = function() {
 };
 
 // Prototypal Inheritance
-Object.prototype.inherit = function(p) {
-    NewObj = function(){};
-    NewObj.prototype = p;
-    return new NewObj(); 
+var helper = {		    // Thanks to Bob Vince for reminding me NOT to clobber Object!
+    inherit: function(p) {
+	NewObj = function(){};
+	NewObj.prototype = p;
+	return new NewObj(); 
+    },
+    inheritPrototype: function(subType, superType) {
+	var prototype = helper.inherit(superType.prototype);
+	prototype.constructor = subType;
+	subType.prototype = prototype;
+    }
 };
 
-// Paraphrasing of Nicholas Zakas's Prototype Inheritance helper
-function inheritPrototype(subType, superType) {
-    var prototype = Object.inherit(superType.prototype);
-    prototype.constructor = subType;
-    subType.prototype = prototype;
-};
 function SubType(name, age) {
     Parent.call(this, name);
     this.age = age;    
 };
 //Child.prototype = new Parent();   // Gets replaced by:
-inheritPrototype(SubType, Parent);  // Clobbers global object - would be better to namespace this!
+helper.inheritPrototype(SubType, Parent);  
 SubType.prototype.getAge = function() {
     return this.age;
 };
