@@ -40,5 +40,32 @@ describe 'JavaScript Gotchas'
 	    obj['return'].should.eql 'return'
 	end
     end
+    describe 'block scope workaround'
+	it 'should use anonymous function to mimic block scope'
+	    function foo() {
+		try {
+		    (function() {
+			for(var i=0; i<5; i++) {
+			    console.log(i);
+			}
+		    })();
+		    return i;
+		} catch(e) {
+		    return "ReferenceError caught";
+		}
+	    }
+	    foo().should.eql "ReferenceError caught"
+	end
+    end
+
+    describe 'Priveleged Singleton Pattern (also called Module Pattern)'
+	it 'should create a singleton with private members'
+	    privileged_singleton.privateVar.should.be_undefined 
+	    privileged_singleton.privateFun.should.be_undefined 
+	    privileged_singleton.publicFunc().should.match /publicFunc is.*this is private.*top secret/i
+	    privileged_singleton.publicVar.should.eql 'this is public'
+	    privileged_singleton.foo.should.eql 'foo'
+	end
+    end
 end
 
