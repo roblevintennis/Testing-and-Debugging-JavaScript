@@ -17,5 +17,28 @@ describe 'JavaScript Gotchas'
 	    gotchas.callParseInt('08', 10).should.eql 8 
 	end
     end
+    describe '== type coercion example from Crockford Good Parts'
+	it 'should show that double equals type coercion is complicated and "unmemorable"'
+	    ('' == '0').should.eql false
+	    (0 == '').should.eql true
+	    ('0' == 0).should.eql true
+	    (false == 'false').should.eql false
+	    (false == '0').should.eql true
+	    (false == undefined).should.eql false
+	    (false == null).should.eql false
+	    (null == undefined).should.eql true
+	    (' \t\r\n ' == 0).should.eql true
+	end
+    end
+    describe 'reserved words in object literals'
+	it 'should not allow reserved words to be used as names in object literals'
+	    var obj = {
+	      'case': 'case',
+	      'return': 'return'
+	    };
+	    obj['case'].should.eql 'case'
+	    obj['return'].should.eql 'return'
+	end
+    end
 end
 
