@@ -1,0 +1,1 @@
+var person={name:"Rob",foo:function(){alert("OMG...BOOOORRRRING!!!!")}};var pickyBrackets={picky:"Doug likes brackets in K&R style"};

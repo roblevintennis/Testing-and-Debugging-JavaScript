@@ -1,0 +1,1 @@
+var person={name:"Rob",foo:function(){var a="long var";alert("OMG...BOOOORRRRING!!!!");(function(){var b="nest function value"})()}};
