@@ -55,5 +55,38 @@ SinglyLinkedList.prototype = {
 	    current = current.next;
 	}
 	return null;
+    },
+    isEmpty: function() { 
+	return (this.head === null) ? true : false;
+    },
+
+    // Let's forget that we have a length already ;-)
+    findNthToLast: function (n) {
+	// Guard code
+	if(!isANumber(n) || this.isEmpty() ) { return null; }
+
+	// Set current to head - loop list to get size
+	var current = this.head;
+	var size = 1;		    
+	while(current.next !== null) {
+	    size++;
+	    current = current.next;
+	}
+	if(size < n) return null;   // List needs to be bigger then n
+
+	var index = size - n;	    // Compute the index
+
+	current = this.head;	    // reset current to beginning
+
+	for(i=0; i<index; i++)	    // Traverse to index and return
+	    current = current.next
+	return current;
     }
 };
+function isANumber(n) {
+    if(typeof n === 'number' && isFinite(n)) {
+	return true;
+    } else {
+	return false; 
+    }
+};    

@@ -88,4 +88,27 @@ describe 'Singly Linked List'
 	end
     end
     
+     describe 'Find Nth-to-last element.'
+     
+	it 'should find Nth-to-last if list at least N elements, otherwise return null'
+	    list.insertBeginning(firstNode)
+	    list.insertBeginning(secondNode)
+	    list.insertBeginning(new LinkNode(3))
+	    list.findNthToLast(2).should.eql secondNode
+	end
+	it 'should return null if list is empty or less than N'
+	    // List is empty but we try to find N
+	    list.findNthToLast(2).should.be null 
+	    list.insertBeginning(firstNode)
+	    list.insertBeginning(secondNode)
+	    // List is 2 elements. Lets make N == 3
+	    list.findNthToLast(3).should.be null 
+	end
+	it 'should return null if n argument is not a number'
+	    list.insertBeginning(firstNode)
+	    list.findNthToLast('abc').should.be null 
+	    list.findNthToLast({one:1,two:2}).should.be null 
+	    list.findNthToLast([1]).should.be null 
+	end	
+    end
 end
