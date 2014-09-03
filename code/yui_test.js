@@ -2,7 +2,7 @@
 var nameAgeTest = new YAHOO.tool.TestCase({
 
     name: "Test Name and Age",
-    
+
     setUp : function () {
         this.data = { name : "Rob", age : 39 };
     },
@@ -17,13 +17,13 @@ var nameAgeTest = new YAHOO.tool.TestCase({
 
     testAge: function () {
         YAHOO.util.Assert.areEqual(39, this.data.age, "Age should be 39");
-    }    
+    }
 });
 // Simple test case 2
 var fooNumTest = new YAHOO.tool.TestCase({
 
     name: "Test Foo Num",
-    
+
     setUp : function () {
         this.data = { foo : "FOO", num : 123 };
     },
@@ -38,7 +38,7 @@ var fooNumTest = new YAHOO.tool.TestCase({
 
     testBar: function () {
         YAHOO.util.Assert.areEqual(123, this.data.num, "num should be 123");
-    }    
+    }
 });
 
 // Create a test suite and add the two test cases from above

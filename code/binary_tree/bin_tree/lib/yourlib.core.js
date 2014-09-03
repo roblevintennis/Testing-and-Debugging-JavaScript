@@ -10,7 +10,7 @@ function BSTree(n) {
 		this.root = n;
 };
 BSTree.prototype = {
-		// Essentially have to go past node it should be connected to  
+		// Essentially have to go past node it should be connected to
 		// looking for undefined, so we always need pointer to parent node
 		addNode: function(node) {
 				var current = this.root;
@@ -45,10 +45,10 @@ BSTree.prototype = {
 								}
 						}
 				}
-				return null;	
+				return null;
 		},
 		// Builds an "in order" array of the list's nodes (eg [1,2,3,4...])
-		traverseInOrder: function(inOrdArray, cNode) { 
+		traverseInOrder: function(inOrdArray, cNode) {
 				if(cNode !== undefined) {
 						this.traverseInOrder(inOrdArray, cNode.left);
 						inOrdArray.push(cNode);

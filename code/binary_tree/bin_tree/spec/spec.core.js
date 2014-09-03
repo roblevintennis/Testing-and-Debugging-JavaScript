@@ -1,7 +1,7 @@
 /*
-------------------------- Binary Search Tree ------------------------- 
+------------------------- Binary Search Tree -------------------------
 
-NOTE: This is about the simplest Binary Search Tree we could make. It does NOT implement deletion 
+NOTE: This is about the simplest Binary Search Tree we could make. It does NOT implement deletion
       which is rather complex. However, Zakas has a series of articles online (part II does the deletiation part):
       http://www.nczonline.net/blog/2009/06/16/computer-science-in-javascript-binary-search-tree-part-2/
 			http://www.nczonline.net/blog/2009/06/09/computer-science-in-javascript-binary-search-tree-part-1/
@@ -40,7 +40,7 @@ the root. If we assume the root is Level 0, its children will be Level 1, its gr
 will be Level 2, and so on.
 
 -- Keys: We’ve seen that one data item in an object is usually designated a key value. This
-value is used to search for the item or perform other operations on it. 
+value is used to search for the item or perform other operations on it.
 
 -- Binary Trees: If every node in a tree can have at most two children, the tree is called a binary
 tree.
@@ -64,10 +64,10 @@ describe 'Binary Search Tree'
 				tree				= new BSTree(root)
 				tree.addNode(leftChild)
 				tree.addNode(rightChild)
-		end	
+		end
 		it 'should create a node2 with left and right nodes'
 				// Node should be as initialized data, left/right null
-				node2.data.should.be 222 
+				node2.data.should.be 222
 				node2['left'].should.be_null
 				node2['right'].should.be_null
 				// After assignment, left/right should be as assigned
@@ -104,8 +104,8 @@ describe 'Binary Search Tree'
 				tree.find(10).id.should.equal 10
 				tree.find(16).id.should.equal 16
 				tree.find(17).id.should.equal 17
-				tree.find(888).should.be_null 
-				tree.find('abc').should.be_null 
+				tree.find(888).should.be_null
+				tree.find('abc').should.be_null
 		end
 		it 'should add and find nodes even if negative numbers'
 				var negNode = new Node(-10)
@@ -115,7 +115,7 @@ describe 'Binary Search Tree'
 		it 'should traverse in order and return in order array'
 				var llGrandChild	= new Node(5,5)
 				tree.addNode(llGrandChild)
-				var inOrderArray = tree.traverseInOrder([], root)	
+				var inOrderArray = tree.traverseInOrder([], root)
 				inOrderArray[0].id.should.equal llGrandChild.id
 				inOrderArray[1].id.should.equal leftChild.id
 				inOrderArray[2].id.should.equal root.id

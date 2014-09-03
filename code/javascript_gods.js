@@ -18,16 +18,16 @@ var TDJS = (function() {
     }
     Person.prototype.getName = function() { return this.name; }
     Person.prototype.setName = function(name) { this.name = name; }
-    Person.prototype.greet   = function() { 
-	alert("Hi, my name is " + this.name); 
+    Person.prototype.greet   = function() {
+	alert("Hi, my name is " + this.name);
 	alert("Let us pay tribute to: \n" +
 		    "Inventor of JavaScript: " + privateJSHeroes.jsCreator + "\n" +
 		    "Inventor of FireBug: " + privateJSHeroes.firebugCreator + "\n" +
 		    "Inventor of JQuery: " + privateJSHeroes.jqueryGuy + "\n" +
-		    "Yahoo Home Page & author of Professional JavaScript for Web Developers: " + 
+		    "Yahoo Home Page & author of Professional JavaScript for Web Developers: " +
 			privateJSHeroes.yahooUIGuy + "\n" +
 		    "JavaScript: The Good Parts: " + privateJSHeroes.yahooOG + "\n" +
-		    "(and my apologies to all the other JavaScript greats not listed!)\n"); 
+		    "(and my apologies to all the other JavaScript greats not listed!)\n");
     }
     return {
 	Person : Person

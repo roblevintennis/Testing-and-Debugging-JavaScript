@@ -17,8 +17,8 @@
     <link rel="search" type="application/opensearchdescription+xml" title="Mozilla Add-ons"
         href="/AMOSearch.xml" />
 
-    
-            <link rel="stylesheet" type="text/css" href="/css/amo2009/style.min.css?52492" media="all" />    
+
+            <link rel="stylesheet" type="text/css" href="/css/amo2009/style.min.css?52492" media="all" />
     <!--[if IE]>
         <link rel="stylesheet" type="text/css" href="/css/amo2009/ie.css" media="screen,projection,tv" />    <![endif]-->
     <!--[if IE 7]>
@@ -53,13 +53,13 @@
         <li><a href="#categories">Skip to categories menu</a></li>
         <li><a href="#other-apps">Skip to other applications menu</a></li>
     </ul>
-        
+
     <div class="section">
         <div id="header" role="banner">
         <p id="title"><a href="/en-US/firefox/" title="Return to the Firefox Add-ons homepage">Add-ons <em>for</em> <img alt="Firefox" src="/img/amo2009/app-icons/firefox.png" /> <strong>Firefox</strong></a></p>
     <p id="brand"><a href="http://www.mozilla.com/en-US/" title="Mozilla" accesskey="1">Mozilla</a></p>
 
-    
+
     <div id="aux-nav" role="navigation">
         <ul id="other-apps" class="change" title="Find add-ons for other applications">
             <li>
@@ -80,12 +80,12 @@
             </li>
         </ul>
 
-        
+
     <p class="context">
         <a href="/en-US/firefox/users/register">Register</a> or <a href="/en-US/firefox/users/login?to=en-US%2Ffirefox%2Faddon%2F1843">Log in</a>    </p>
     </div>
 </div>
-    
+
 
 <div class="stand-alone-options">
   <div id="categories" class="categories">
@@ -154,7 +154,7 @@
         </li>
     </ul>
 </div>
-  
+
 <div class="search-form expanded-search-form">
     <form method="get" action="/en-US/firefox/search" id="search-form">
         <div class="basic" id="search-query">
@@ -180,7 +180,7 @@
                                                                     <option value="1,92">Toolbars</option>
                                                                     <option value="1,4">Web Development</option>
                                                                     <option value="1,73">Other</option>
-                    
+
                     <option class="cat-all" value="collections">all collections</option>
             </select>
             <button type="submit"><img src="/img/amo2009/blank.gif" alt="Search for add-ons"/></button>
@@ -295,7 +295,7 @@ versions[60] = {"0.1": "0.1", "0.7": "0.7", "1.0": "1.0", 'Any' : 'any' };
 
     default_low = ( ('' == '-1' || '' == '')  && current_app_id == 1) ? low_appversion : 'any';
 
-    
+
     $("#lver-td input").remove();
 
     var verArr =  versions[1];
@@ -334,7 +334,7 @@ versions[60] = {"0.1": "0.1", "0.7": "0.7", "1.0": "1.0", 'Any' : 'any' };
         return true;
     });
 
-    
+
     $(document).ready(function() {
         var q = $("#query");
         var l = $("#search-query label[for=query]");
@@ -406,15 +406,15 @@ Firebug 1.4 requires Firefox 3.0 or higher.            </p>
         	<script type="text/javascript">
         installVersusDownloadCheck("installTrigger65631-79ab13a7", "Add to Firefox ", "Download Now ");
 	</script>
-    
+
             <strong>recommended</strong>
         </div>
 
     <script type="text/javascript">setTimeout(function() {initExpConfirm('79554-79ab13a7');fixPlatformLinks('79554-79ab13a7', 'Firebug');addCompatibilityHints('1843', '79554-79ab13a7', '3.0', '3.5.*', '');},0);</script>
 
             </div>
-                
-            
+
+
             <table summary="Add-on Information">
               <tbody>
                                     <tr>
@@ -469,7 +469,7 @@ Firebug 1.4 requires Firefox 3.0 or higher.            </p>
                                   <a class="screenshot thumbnail" rel="lightbox" href="/en-US/firefox/images/p/9486/" title="">
               <img alt="" src="/en-US/firefox/images/t/9486/" />
             </a>
-          
+
           <div class="share-this">
             <a class="share" href="#">Share this Add-on</a>
             <div class="share-networks">
@@ -525,11 +525,11 @@ Visit the Firebug website for documentation, screen shots, and discussion forums
            href="/en-US/firefox/images/p/11828/" title="Network">
           <img src="/en-US/firefox/images/t/11828/" alt="" />
         </a>
-          
+
           <h4>Support</h4>
       <p>
                   Support for this add-on is provided by the developer at <a href="http://groups.google.com/group/firebug/topics" >http://groups.google.com/group/firebug/topics</a>              </p>
-    
+
               <h4>Developer Comments</h4>
       <p >
         If you have any problems, please read the FireBug FAQ.<br />
@@ -572,15 +572,15 @@ I can&#039;t even think of working without this !</p>
           See all 681 reviews of this add-on        </a>
       </p>
     </div>
-  
+
 
       <h3>What do you think?</h3>
     <div id="review-box" class="highlight">
               <p>Please <a href="/en-US/firefox/users/login?to=en-US%2Ffirefox%2Faddon%2F1843">log in</a> to submit a review</p>
-      
+
       <form class="addon-feedback" method="post"
             action="/en-US/firefox/reviews/add/1843">
-        
+
                 <div class="container">
           <label for="review">Review</label>
           <textarea name="data[Review][body]" id="review" disabled="disabled"                    cols="30" rows="6"></textarea>
@@ -610,7 +610,7 @@ I can&#039;t even think of working without this !</p>
           Detailed Review        </a>
       </p>
     </div> <!-- highlight -->
-  
+
         <h3>Release Notes</h3>
       <div class="article">
         <a href="/en-US/firefox/addons/versions/1843#version-1.4.3"  title="Permanent link to this version">Version 1.4.3</a>    <span title="September 29, 2009, 11:35 AM">&mdash;
@@ -619,7 +619,7 @@ I can&#039;t even think of working without this !</p>
 <br />
 Replaced &quot;Off for All Web Pages&quot; with &quot;Clear Activation List&quot;.        </p>
 
-        
+
         <ul class="further-navigation">
                     <li>
             <a href="/en-US/firefox/addons/versions/1843">
@@ -627,7 +627,7 @@ Replaced &quot;Off for All Web Pages&quot; with &quot;Clear Activation List&quot
           </li>
         </ul>
       </div> <!-- Release Notes -->
-  
+
 </div> <!-- primary -->
 
 <div class="secondary" role="secondary">
@@ -701,7 +701,7 @@ Replaced &quot;Off for All Web Pages&quot; with &quot;Clear Activation List&quot
 </form>
     </div>
 
-            <a href="/en-US/firefox/users/register">Register</a> or <a href="/en-US/firefox/users/login?to=en-US%2Ffirefox%2Faddon%2F1843">Log in</a> to add tags    
+            <a href="/en-US/firefox/users/register">Register</a> or <a href="/en-US/firefox/users/login?to=en-US%2Ffirefox%2Faddon%2F1843">Log in</a> to add tags
 </div>
 <!-- /.highlight-->
 
@@ -730,7 +730,7 @@ Replaced &quot;Off for All Web Pages&quot; with &quot;Clear Activation List&quot
             </li>
                   </ul>
       </div>
-    
+
     <div class="collections-add">
         <h3 class="compact-bottom">Related Collections</h3>
 
@@ -824,7 +824,7 @@ Replaced &quot;Off for All Web Pages&quot; with &quot;Clear Activation List&quot
                 <button type="submit">Go</button>
               </div>
             </form>
-        
+
         <p><strong>Copyright <span title="pm-app-amo15.mozilla.org">&#169;</span> 2005&#8211;2009 Mozilla.</strong> All rights reserved.</p>
         <ul>
             <li><a href="/en-US/firefox/pages/privacy" >Privacy Policy</a></li>

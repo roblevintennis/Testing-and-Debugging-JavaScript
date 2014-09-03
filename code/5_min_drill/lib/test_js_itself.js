@@ -3,12 +3,12 @@ JSTest.prototype = {
     constructor: JSTest,
     switchTest : function(c) {
 	switch(c) {
-	    case 0: 
+	    case 0:
 		return "zero";
 		break;
 	    case 1:
 		return "one";
-		break; 
+		break;
 	    case "no break case":
 		// do nothing...testing fall through
 	    case "next case":

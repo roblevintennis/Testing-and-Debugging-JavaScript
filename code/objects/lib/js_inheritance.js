@@ -45,7 +45,7 @@ var helper = {		    // Thanks to Bob Vince for reminding me NOT to clobber Objec
     inherit: function(p) {
 	NewObj = function(){};
 	NewObj.prototype = p;
-	return new NewObj(); 
+	return new NewObj();
     },
     inheritPrototype: function(subType, superType) {
 	var prototype = helper.inherit(superType.prototype);
@@ -56,16 +56,16 @@ var helper = {		    // Thanks to Bob Vince for reminding me NOT to clobber Objec
 
 function SubType(name, age) {
     Parent.call(this, name);
-    this.age = age;    
+    this.age = age;
 };
 //Child.prototype = new Parent();   // Gets replaced by:
-helper.inheritPrototype(SubType, Parent);  
+helper.inheritPrototype(SubType, Parent);
 SubType.prototype.getAge = function() {
     return this.age;
 };
 
 // Functional - Durable Pattern
-function super_func(blueprint) { 
+function super_func(blueprint) {
     var obj = {};
     obj.getName = function() { return blueprint.name; };
     obj.getAge  = function() { return blueprint.age; };
@@ -77,5 +77,5 @@ function sub_func(blueprint) {
     blueprint.name = blueprint.name || "Crockford's Place";
     supr = super_func(blueprint);
     supr.coolAugment = function() { return "I give a fresh new perspective on things!" };
-    return supr;    
+    return supr;
 };

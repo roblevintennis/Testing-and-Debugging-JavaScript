@@ -34,7 +34,7 @@ SinglyLinkedList.prototype = {
 	    if(current.id === id) {		// If found match
 		if(current === this.head) {	// If first link in list
 		    this.head = this.head.next;
-		} else {			
+		} else {
 		    previous.next = current.next;
 		}
 		this.length--;
@@ -56,7 +56,7 @@ SinglyLinkedList.prototype = {
 	}
 	return null;
     },
-    isEmpty: function() { 
+    isEmpty: function() {
 	return (this.head === null) ? true : false;
     },
 
@@ -67,7 +67,7 @@ SinglyLinkedList.prototype = {
 
 	// Set current to head - loop list to get size
 	var current = this.head;
-	var size = 1;		    
+	var size = 1;
 	while(current.next !== null) {
 	    size++;
 	    current = current.next;
@@ -87,6 +87,6 @@ function isANumber(n) {
     if(typeof n === 'number' && isFinite(n)) {
 	return true;
     } else {
-	return false; 
+	return false;
     }
-};    
+};

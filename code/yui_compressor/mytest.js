@@ -4,7 +4,7 @@ var person = {
     foo: function() {
 	alert("OMG...BOOOORRRRING!!!!");
     }// , // See if JSLint sees this?
-};  
+};
 var pickyBrackets =
 {
     picky: "Doug likes brackets in K&R style"

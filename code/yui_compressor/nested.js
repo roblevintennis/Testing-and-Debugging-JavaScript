@@ -7,4 +7,4 @@ var person = {
 	    var nestedFunc = 'nest function value';
 	})();
     }
-};  
+};

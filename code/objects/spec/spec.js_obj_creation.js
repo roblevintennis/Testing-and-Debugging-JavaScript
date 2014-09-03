@@ -11,29 +11,29 @@ describe 'ObjectCreation'
 	it 'should add prototype property which should be available to all instances'
 	    obj1.foo.should.eql 'foo property'
 	    obj2.foo.should.eql 'foo property'
-	    obj1.bar().should.eql 'me is bar method' 
-	    obj2.bar().should.eql 'me is bar method' 
-	end	
+	    obj1.bar().should.eql 'me is bar method'
+	    obj2.bar().should.eql 'me is bar method'
+	end
     end
     describe 'Overriding Prototype Properties'
 	it 'should update a prototype property but only affect that same instance'
 	    obj1.foo = "new version of foo"
 	    obj1.foo.should.eql "new version of foo"
 	    obj2.foo.should.eql "foo property"
-	end	
+	end
     end
     describe 'Updated Prototype Props are really shadowed'
 	it 'should return to showing original prototype value after deleting the shadow'
 	    obj1.foo = "new version of foo"
 	    obj1.foo.should.eql "new version of foo"
 	    delete obj1.foo;
-	    obj1.foo.should.eql "foo property" 
+	    obj1.foo.should.eql "foo property"
 	    // Test on methods too
 	    obj1.bar = function() { return "me is NEW bar method!"; }
-	    obj1.bar().should.eql 'me is NEW bar method!' 
+	    obj1.bar().should.eql 'me is NEW bar method!'
 	    delete obj1.bar;
-	    obj1.bar().should.eql 'me is bar method' 
-	end	
+	    obj1.bar().should.eql 'me is bar method'
+	end
     end
 
     describe 'Prototype Literals'
@@ -53,17 +53,17 @@ describe 'ObjectCreation'
 	    Thing.prototype = {
 		foo : 'foo'
 	    };
-	    ('foo' in beforeProto).should.eql false 
+	    ('foo' in beforeProto).should.eql false
 	    var afterProto = new Thing();
-	    ('foo' in afterProto).should.eql true 
+	    ('foo' in afterProto).should.eql true
 	end
     end
-    
+
     describe 'Prototype Issue - Static-Like Behavior ONLY for Reference Types'
 	it 'should share state on prototype non-method properties'
 	    var instance1 = new Issues()
 	    var instance2 = new Issues()
-	    
+
 	    // Reference types are essentially static
 	    instance1.arr.push('cuatro')
 	    (instance1.arr === instance2.arr).should.eql true
@@ -74,8 +74,8 @@ describe 'ObjectCreation'
 
 	    // OMG, primitives hide their state just fine!
 	    instance1.x = 9
-	    instance1.x.should.eql 9 
-	    instance2.x.should.eql 1 
+	    instance1.x.should.eql 9
+	    instance2.x.should.eql 1
 	end
     end
 end

@@ -4,4 +4,4 @@ var three = {
 	alert("I be three!");
     },
     bar: 'bar-three'
-};  
+};

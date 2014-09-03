@@ -17,8 +17,8 @@ var privileged_singleton = function() {
     var obj = SomeObject;
     obj.publicVar = 'this is public';
     obj.publicFunc = function() {
-	var message = 'publicFunc is privileged, and hereby allows you to see private var: ' + 
-	    privateVar + ', as well as see the return value of privateFunc: ' + privateFunc(); 
+	var message = 'publicFunc is privileged, and hereby allows you to see private var: ' +
+	    privateVar + ', as well as see the return value of privateFunc: ' + privateFunc();
 	return message;
     };
     return obj;

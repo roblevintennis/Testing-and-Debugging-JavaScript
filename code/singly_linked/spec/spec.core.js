@@ -1,5 +1,5 @@
 // ----- Singly Linked List ----
-// We are not going to rename the spec.core.js and yourlib.core.js in 
+// We are not going to rename the spec.core.js and yourlib.core.js in
 // efforts to save time.
 describe 'Singly Linked List'
     before_each
@@ -16,7 +16,7 @@ describe 'Singly Linked List'
 	it 'should create first node with next pointing to null'
 	    node = new LinkNode(1)
 	    node.toString().should.eql "LinkNode id: 1"
-	    node.next.should.be_null 
+	    node.next.should.be_null
 	    node.id.should.eql 1
 	end
 	it 'should create linked list with zero elements & a head member pointing to null.'
@@ -24,7 +24,7 @@ describe 'Singly Linked List'
 	    list.head.should.be_null
 	end
     end
-    
+
     describe 'List insertion'
 	it 'should insert node as new head of list, and have its next point to old head.'
 	    list.insertBeginning(firstNode)
@@ -45,7 +45,7 @@ describe 'Singly Linked List'
 	end
     end
 
-    
+
     describe 'Link node removal'
 	it 'should return false when list is empty and we try to remove'
 	    removed = list.remove(2)
@@ -61,8 +61,8 @@ describe 'Singly Linked List'
 	    list.insertBeginning(secondNode)
 	    list.insertBeginning(new LinkNode(3))
 	    list.remove(2).should.eql true
-	    list.length.should.eql 2	    
-	    list.remove(999).should.eql false 
+	    list.length.should.eql 2
+	    list.remove(999).should.eql false
 	    /* Insure we in fact removed link */
 	    list.traverse().should.eql([3,1])
 	end
@@ -81,15 +81,15 @@ describe 'Singly Linked List'
 	    list.find(999).should.be null
 	    list.find('junk').should.be null
 	end
-	it 'should return null if list is empty' 
+	it 'should return null if list is empty'
 	    list.find(firstNode.id).should.be null
 	    list.find(secondNode.id).should.be null
 	    list.find("garbage").should.be null
 	end
     end
-    
+
      describe 'Find Nth-to-last element.'
-     
+
 	it 'should find Nth-to-last if list at least N elements, otherwise return null'
 	    list.insertBeginning(firstNode)
 	    list.insertBeginning(secondNode)
@@ -98,17 +98,17 @@ describe 'Singly Linked List'
 	end
 	it 'should return null if list is empty or less than N'
 	    // List is empty but we try to find N
-	    list.findNthToLast(2).should.be null 
+	    list.findNthToLast(2).should.be null
 	    list.insertBeginning(firstNode)
 	    list.insertBeginning(secondNode)
 	    // List is 2 elements. Lets make N == 3
-	    list.findNthToLast(3).should.be null 
+	    list.findNthToLast(3).should.be null
 	end
 	it 'should return null if n argument is not a number'
 	    list.insertBeginning(firstNode)
-	    list.findNthToLast('abc').should.be null 
-	    list.findNthToLast({one:1,two:2}).should.be null 
-	    list.findNthToLast([1]).should.be null 
-	end	
+	    list.findNthToLast('abc').should.be null
+	    list.findNthToLast({one:1,two:2}).should.be null
+	    list.findNthToLast([1]).should.be null
+	end
     end
 end

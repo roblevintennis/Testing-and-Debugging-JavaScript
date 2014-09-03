@@ -1,7 +1,7 @@
-require 'tempfile'  
+require 'tempfile'
 
 namespace :js do
-	
+
     # ---------- EDIT THESE PROPERTIES! --------- #
     RHINO_JAR_PATH	= "rhino/js.jar"
     JSLINT_PATH		= "jslint/jslint.js"
@@ -47,14 +47,14 @@ namespace :js do
 	    puts
 	end
     end
-  
+
     desc "Minify JavaScript by concatenating files, then apply YUI Compressor to amalgamation file"
     task :min => [:lint] do
 	concat_file = Tempfile.new("temp_file.js", Dir.getwd )
 	jsfiles = File.join("**", "*.js")	# ** makes it recursive
 	Dir.glob(jsfiles).reject{|path| path =~ /#{Regexp.quote(JS_EXCLUDE)}/ }.each do |js|
-	    open(js) do |f| 
-		concat_file.write(f.read) 
+	    open(js) do |f|
+		concat_file.write(f.read)
 	    end
 	end
 	concat_file.rewind
@@ -64,5 +64,5 @@ namespace :js do
 	puts "Minified JavaScript - resulting file: #{AMALGAMATION_FILE}"
 	puts "---------------------------------------------"
 	puts
-    end    
+    end
 end

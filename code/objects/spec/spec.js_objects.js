@@ -18,9 +18,9 @@ describe 'JSObjects'
 	it 'should reference original object and reflect any changes made to original'
 	    o = jso.objLiteralCreate();
 	    var copy = o;
-	    copy.name.should.eql 'Rob' 	    
+	    copy.name.should.eql 'Rob'
 	    o.name = 'Charlie'
-	    copy.name.should.eql 'Charlie' 
+	    copy.name.should.eql 'Charlie'
 	end
     end
 
